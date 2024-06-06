@@ -1,0 +1,112 @@
+@import "mapas.less";
+@breakpointMobile: ~"(min-width:767px)(max-width:767px)";
+@breakpointTablet:~"(min-width:768px)(max-width:1023px)";
+
+.marginbottom8 {
+ margin-bottom: 8px;
+}
+body {
+    background-color: #colors[backgroundcolor];
+    h2 {
+        color: #colors[textcolor];
+    }
+}
+
+li {
+    list-style: none;
+}
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @breakpointTablet {
+        max-width: 80%;
+        background-color: yellow;
+    }
+    @media @breakpointMobile {
+        max-width: 70%;
+        background-color: red;
+    }
+}
+
+header {
+    padding: 24px;
+    
+    .profile-avatar {
+        display: block;
+        margin: 0 auto; 
+        border-radius: 50%;
+        height: 100px;
+    }
+}
+
+.profile-bio {
+    text-align: center;
+    &-name {
+      text-align: center;  
+      .marginbottom8();
+      color: #colors[textcolor];
+    }
+    &-subtitle {
+    font-size: 16px;
+    .marginbottom8();
+    color: #colors[textcolor];
+    }
+    &-description {
+        .marginbottom8();
+        font-size: 14px;
+        color: #colors[textcolor];
+        
+    }
+}
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+}
+
+.social-list {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 240px;
+    li {
+        
+        
+        
+        a{
+            text-decoration: none;   
+        }
+} 
+}
+
+.project-list {
+    display: block;
+    margin: 0 auto;
+    max-width: 480px;
+    text-align: center;
+     &-item {
+        
+       
+        
+        a{
+            text-decoration: none;
+            background-color: #colors[buttoncolor];
+            padding: 16px 20px;
+            display: block;
+            color: #colors[textcolor];
+            margin-bottom: 16px;
+            width: 100%;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #colors[textcolor];
+            transition: all ease 0.5ms;
+            &:hover {
+                background-color: #colors[backgroundcolor];
+                
+            }
+            
+        }
+        
+     }
+}

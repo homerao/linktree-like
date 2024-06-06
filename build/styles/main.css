@@ -1,0 +1,91 @@
+.marginbottom8 {
+  margin-bottom: 8px;
+}
+body {
+  background-color: #3498db;
+}
+body h2 {
+  color: #ecf0f1;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width:768px)(max-width:1023px) {
+  .container {
+    max-width: 80%;
+    background-color: yellow;
+  }
+}
+@media (min-width:767px)(max-width:767px) {
+  .container {
+    max-width: 70%;
+    background-color: red;
+  }
+}
+header {
+  padding: 24px;
+}
+header .profile-avatar {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 100px;
+}
+.profile-bio {
+  text-align: center;
+}
+.profile-bio-name {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #ecf0f1;
+}
+.profile-bio-subtitle {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #ecf0f1;
+}
+.profile-bio-description {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ecf0f1;
+}
+nav {
+  margin: 0 auto;
+  max-width: 360px;
+}
+.social-list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 240px;
+}
+.social-list li a {
+  text-decoration: none;
+}
+.project-list {
+  display: block;
+  margin: 0 auto;
+  max-width: 480px;
+  text-align: center;
+}
+.project-list-item a {
+  text-decoration: none;
+  background-color: #16a085;
+  padding: 16px 20px;
+  display: block;
+  color: #ecf0f1;
+  margin-bottom: 16px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #ecf0f1;
+  transition: all ease 0.5ms;
+}
+.project-list-item a:hover {
+  background-color: #3498db;
+}
